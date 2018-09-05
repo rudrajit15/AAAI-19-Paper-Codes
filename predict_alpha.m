@@ -30,6 +30,5 @@ c = 1/lambda_max;
 z = (exp(gamma*c*(lambda_max-x.^2))-1)/(exp(gamma*c*lambda_max)-1);
 y = mu_s*exp(-(mu_s*(x-sqrt(beta)))).*z;
 ar = trapz(x,y);
-
 alpha2 = (m/(2*n))*ar + ((n-m)/(2*n))*(exp(gamma*c*(lambda_max-beta))-1)/(exp(gamma)-1)
 
